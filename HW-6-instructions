@@ -1,0 +1,76 @@
+FriCruises shipping company that specializes in cruises throughout the world's oceans. As always, the
+company executives once again the captain and his ship cruises set plan, consisting of a sequence
+individual sailings between two ports, and put it together with travel orders of trip also
+mailbox. Unfortunately, the master plan cruises lost, while others put all the travel orders in the form of individual
+Files on the ship's computer. 
+
+The captain is his nephew studentComputer and Information Science ask for help in the reconstruction plan cruises.
+In the C programming language to write a program on the basis of data on individual journeys between two
+ports creates a linked list of structures, where each structure describes a particular voyage, a list of
+as a whole constitutes the entire cruise and provided to query the details of the
+cruises.
+Information on individual journeys are given in succession on standard input, with
+their sequence does not reflect a series of cruises. Number of sailings, which consists of the major cruise
+or equal to 1 and is not limited upward. The names of the ports are qualifying expression and not longer than 100 characters.
+Example data for a particular voyage between two ports is as follows:
+
+Barcelona  -      name of the port, which is the start of navigation
+Tonga      -      name of the port that is the end of the voyage
+105        -      voyage duration in days
+120        -      number of passengers will be boarded at the start of navigation
+60         -      number of passengers will be disembarked at the end of the trip
+
+You can assume that the scheduled cruise ship visits each port only once and
+that none of the crossings that make up the plan a cruise without missing a travel warrant. 
+It can also assume that the transhipment of passengers instantaneous and take place at midnight.
+
+Data on voyages to the standard input followed by a line containing only the string "?", Followed by another, or
+more positive whole numbers representing the number of consecutive days of cruising, which we want to
+learn the details of the cruise. 
+
+Program to standard output for each of these days in their line displays the number of the day, 
+provided the position of the ship on that day and the estimated number of passengers on board at this
+day. The numbering of the days should start with the number 1 single position of the ship should be described as the
+by opening and closing the port of navigation on the given day, the names should be displayed
+dash, for example: "Perth Sydney".
+
+If the objective sought on the day of the cruise at the end, then the
+program for that day in a row lists the number of the day and the string "ERROR".
+Individual elements of prints each day should be separated by a single space.
+Example, standard input and standard output the corresponding traces on the next page.
+
+Example of data on standard input:
+
+Barcelona
+New_York
+27
+81
+195
+Koper
+Split
+1
+108
+54
+Split
+Barcelona
+8
+120
+60
+?
+1
+9
+36
+37
+
+Example output to standard output, which corresponds to the data on standard input the above example:
+
+1 Koper Split
+108
+9 Split Barcelona
+174
+36 Barcelona New_
+York 195
+37 FAULT
+
+The last line of output should be like any other, ending with a transition to a new line '\ n'. On
+end of each row not Print your spaces.
